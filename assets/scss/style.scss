@@ -28,7 +28,6 @@ The designs were created to the following widths:
     font-size: 24px;
 }
 
-
 h1{
     color: hsl(186, 14%, 43%);
     width: 29%;
@@ -72,6 +71,9 @@ p{
                 color:hsl(183, 100%, 15%);
                 padding: 0 0 0 .8rem;
                 font-weight: 700;
+                -webkit-appearance: none;
+                -moz-appearance: none;
+                appearance: none;
                 &::placeholder{
                     text-align: left;
                     color:hsl(186, 14%, 43%);
@@ -93,6 +95,9 @@ p{
                     background: hsl(183, 100%, 15%);
                     color: #fff;
                     font-weight: 400;
+                    -webkit-appearance: none;
+                    -moz-appearance: none;
+                    appearance: none;
                     &:focus{
                         background: hsl(172, 67%, 45%);
                         color: hsl(183, 100%, 15%);

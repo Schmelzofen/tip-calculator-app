@@ -73,6 +73,9 @@ p {
   color: #00494d;
   padding: 0 0 0 0.8rem;
   font-weight: 700;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .splitter .main-part .bill input::placeholder {
   text-align: left;
@@ -93,6 +96,9 @@ p {
   background: #00494d;
   color: #fff;
   font-weight: 400;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
 }
 .splitter .main-part .select-tip .tip-container input[type=button]:focus {
   background: #26c0ab;

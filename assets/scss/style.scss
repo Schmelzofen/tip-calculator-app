@@ -24,4 +24,182 @@ The designs were created to the following widths:
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    font-family: Space Mono;
+    font-size: 24px;
+}
+
+
+h1{
+    color: hsl(186, 14%, 43%);
+    width: 29%;
+    margin: 0 auto;
+    word-break: break-all;
+    letter-spacing: 10px;
+    font-size: 1.1rem;
+}
+
+h2{
+    color: hsl(189, 41%, 97%);
+    font-size: 17px;
+}
+
+p{
+    color: hsl(184, 14%, 56%);
+    font-size: .7rem;
+    font-weight: 700;
+}
+.splitter{
+    background: hsl(185, 41%, 84%);
+    h1{
+        text-align: center;
+        padding: 2rem 0 .5rem 0;
+    }
+    .main-part{
+        background: hsl(0, 0%, 100%);
+        border-radius: 15px 15px 0 0;
+        .bill{
+            margin: 1rem 1rem;
+            padding: 1rem 0 0rem 0;
+            p{
+                padding: 0 0 .2rem 0;
+            }
+            input{
+                height: 2rem;
+                border: none;
+                border-radius: 5px;
+                background:hsl(189, 41%, 97%);
+                text-align: right;
+                color:hsl(183, 100%, 15%);
+                padding: 0 0 0 .8rem;
+                font-weight: 700;
+                &::placeholder{
+                    text-align: left;
+                    color:hsl(186, 14%, 43%);
+                    background: url(../img/icon-dollar.svg) left no-repeat;
+                }
+            }
+        }
+        .select-tip{
+            margin: 1rem 1rem;
+            p{
+                padding: 0 0 .4rem 0;
+            }
+            .tip-container{
+                input[type=button]{
+                    width: 6.5rem;
+                    border-radius: 5px;
+                    height: 2rem;
+                    border: none;
+                    background: hsl(183, 100%, 15%);
+                    color: #fff;
+                    font-weight: 400;
+                    &:focus{
+                        background: hsl(172, 67%, 45%);
+                        color: hsl(183, 100%, 15%);
+                    }
+                }
+                input[type=button]:nth-of-type(1),input[type=button]:nth-of-type(2){
+                    margin: 0 0 .7rem 0;
+                }
+                input[type=button]:nth-of-type(3),input[type=button]:nth-of-type(4){
+                    margin: 0 0 .7rem 0;
+                }
+                input:last-of-type{
+                    width: 6.5rem;
+                    text-align:right;
+                    padding: 0 .5rem 0 0;
+                    height: 2rem;
+                    border: none;
+                    border-radius: 5px;
+                    background: hsl(189, 41%, 97%);
+                    color: hsl(183, 100%, 15%);
+                    font-weight: 700;
+                    &::placeholder{
+                        color: hsl(186, 14%, 43%);
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+        .people{
+            margin: 1rem 1rem;
+            p{
+                padding: 0 0 .3rem 0;
+            }
+            input{
+                height: 2rem;
+                border: none;
+                border-radius: 5px;
+                background: hsl(189, 41%, 97%);
+                padding: 0 0 0 .8rem;
+                text-align: right;
+                color:hsl(183, 100%, 15%);
+                font-weight: 700;
+                &::placeholder{
+                    background: url(../img/icon-person.svg) left no-repeat;
+                }
+            }
+        }
+        .yourBill{
+            display: flex;
+            flex-direction: column;
+            margin: .5rem .8rem;
+            background: hsl(183, 100%, 15%);
+            border-radius: 10px;
+            padding: 0 0 .7rem 0;
+            .tip-per-person{
+                margin: 0 0rem;
+                padding: 1.3rem 0 0 1rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                p{
+                    font-size: 15px;
+                }
+                .tip-per-person-right{
+                    color: hsl(172, 67%, 45%);
+                    padding: 0 .8rem 0 0;
+                    h3{
+                        font-size: 30px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .tip-total{
+                margin: 0 0rem;
+                padding: .5rem 0 .5rem 1rem;
+                display: flex;
+                flex-direction: row;
+                justify-content: space-between;
+                p{
+                    font-size: 15px;
+                }
+                .tip-total-right{
+                    color: hsl(172, 67%, 45%);
+                    padding: 0 .8rem 0 0;
+                    h3{
+                        font-size: 30px;
+                        font-weight: 300;
+                    }
+                }
+            }
+            .reset-button{
+                text-align: center;
+                button{
+                    width: 12rem;
+                    height: 2rem;
+                    margin: 1rem 0 0 0;
+                    border-radius: 5px;
+                    border: none;
+                    font-weight: 700;
+                    background: hsl(172, 67%, 45%);
+                    color: hsl(183, 100%, 15%);
+                    &:active{
+                        background:hsl(183, 100%, 15%);
+                        color:hsl(172, 67%, 45%);
+                    }
+                }
+            }
+        }
+    }
 }

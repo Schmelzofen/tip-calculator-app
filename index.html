@@ -8,7 +8,67 @@
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
   <body>
-    <main></main>
+    <main>
+      <section class="splitter">
+        <h1>SPLITTER</h1>
+        <section class="main-part">
+          <form action="" onsubmit="return false">
+            <div class="bill">
+              <p>Bill</p>
+              <input type="number" name="bill" id="billInput" placeholder=" " />
+            </div>
+            <div class="select-tip">
+              <p>Select Tip %</p>
+              <div class="tip-container">
+                <input type="button" value="5%" id="fuenf" />
+                <input type="button" value="10%" id="zehn" />
+                <input type="button" value="15%" id="funfzehn" />
+                <input type="button" value="25%" id="funfzwei" />
+                <input type="button" value="50%" id="funfnull" />
+                <input
+                  type="number"
+                  name="customTip"
+                  id="customTip"
+                  placeholder="Custom"
+                />
+              </div>
+            </div>
+            <div class="people">
+              <p>Number of People</p>
+              <input
+                type="number"
+                name="numberPeople"
+                id="anzahlPersonen"
+                placeholder=" "
+              />
+            </div>
+            <div class="yourBill">
+              <div class="tip-per-person">
+                <div class="tip-per-person-left">
+                  <h2>Tip Amount</h2>
+                  <p>/ person</p>
+                </div>
+                <div class="tip-per-person-right">
+                  <h3 id="amountPerPerson">$41.04</h3>
+                </div>
+              </div>
+              <div class="tip-total">
+                <div class="tip-total-left">
+                  <h2>Total</h2>
+                  <p>/ person</p>
+                </div>
+                <div class="tip-total-right">
+                  <h3 id="amountTotal">$123.09</h3>
+                </div>
+              </div>
+              <div class="reset-button">
+                <button onclick="resetCalc()">RESET</button>
+              </div>
+            </div>
+          </form>
+        </section>
+      </section>
+    </main>
     <script src="./assets/js/main.js"></script>
   </body>
 </html>

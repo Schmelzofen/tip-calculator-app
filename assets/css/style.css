@@ -99,6 +99,10 @@ p {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
+  transition: 0.2s linear;
+}
+.splitter .main-part .select-tip .tip-container input[type=button]:active {
+  transform: scale(1.1);
 }
 .splitter .main-part .select-tip .tip-container input[type=button]:focus {
   background: #26c0ab;
@@ -200,6 +204,10 @@ p {
   font-weight: 700;
   background: #26c0ab;
   color: #00494d;
+  transition: 0.2s linear;
+}
+.splitter .main-part .yourBill .reset-button button:active {
+  transform: scale(0.9);
 }
 .splitter .main-part .yourBill .reset-button button:active {
   background: #00494d;

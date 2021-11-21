@@ -98,6 +98,10 @@ p{
                     -webkit-appearance: none;
                     -moz-appearance: none;
                     appearance: none;
+                    transition: .2s linear;
+                    &:active{
+                        transform: scale(1.1)
+                    }
                     &:focus{
                         background: hsl(172, 67%, 45%);
                         color: hsl(183, 100%, 15%);
@@ -199,6 +203,10 @@ p{
                     font-weight: 700;
                     background: hsl(172, 67%, 45%);
                     color: hsl(183, 100%, 15%);
+                    transition: .2s linear;
+                    &:active{
+                        transform: scale(.9);
+                    }
                     &:active{
                         background:hsl(183, 100%, 15%);
                         color:hsl(172, 67%, 45%);

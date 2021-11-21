@@ -7,12 +7,12 @@
     <title>Tip Calculator App</title>
     <link rel="stylesheet" href="./assets/css/style.css" />
   </head>
-  <body ontouchstart="">
+  <body>
     <main>
       <section class="splitter">
         <h1>SPLITTER</h1>
         <section class="main-part">
-          <form action="" onsubmit="return false">
+          <form action="calculateTax" onsubmit="return false">
             <div class="bill">
               <p>Bill</p>
               <input type="number" name="bill" id="billInput" placeholder=" " />
@@ -20,16 +20,17 @@
             <div class="select-tip">
               <p>Select Tip %</p>
               <div class="tip-container">
-                <input type="button" value="5%" id="fuenf" />
-                <input type="button" value="10%" id="zehn" />
-                <input type="button" value="15%" id="funfzehn" />
-                <input type="button" value="25%" id="funfzwei" />
-                <input type="button" value="50%" id="funfnull" />
+                <input type="button" value="5%" onclick="tax1()" />
+                <input type="button" value="10%" onclick="tax2()" />
+                <input type="button" value="15%" onclick="tax3()" />
+                <input type="button" value="25%" onclick="tax4()" />
+                <input type="button" value="50%" onclick="tax5()" />
                 <input
                   type="number"
                   name="customTip"
                   id="customTip"
                   placeholder="Custom"
+                  oninput="tax6()"
                 />
               </div>
             </div>
@@ -38,8 +39,9 @@
               <input
                 type="number"
                 name="numberPeople"
-                id="anzahlPersonen"
+                id="numberPeople"
                 placeholder=" "
+                onchange="persons()"
               />
             </div>
             <div class="yourBill">
@@ -49,7 +51,7 @@
                   <p>/ person</p>
                 </div>
                 <div class="tip-per-person-right">
-                  <h3 id="amountPerPerson">$41.04</h3>
+                  <h3 id="amountPerPerson">$00.00</h3>
                 </div>
               </div>
               <div class="tip-total">
@@ -58,7 +60,7 @@
                   <p>/ person</p>
                 </div>
                 <div class="tip-total-right">
-                  <h3 id="amountTotal">$123.09</h3>
+                  <h3 id="amountTotal">$00.00</h3>
                 </div>
               </div>
               <div class="reset-button">

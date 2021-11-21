@@ -50,5 +50,6 @@ persons = () => {
     let newAmountTotal = amountTotal.innerHTML
     let newAmountTotal2 = newAmountTotal.substr(1)
     let finalAmountTotal = "$"+(newAmountTotal2/numberPeople.value).toFixed(2)
-    numberPeople.value === "" ? amountPerson.innerHTML = 0 : amountPerson.innerHTML = finalAmount ; amountTotal.innerHTML = finalAmountTotal
+    amountPerson.innerHTML = finalAmount
+    amountTotal.innerHTML = finalAmountTotal
 }

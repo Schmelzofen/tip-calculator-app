@@ -214,4 +214,26 @@ p {
   color: #26c0ab;
 }
 
+@media only screen and (max-width: 360px) {
+  h1 {
+    width: 30%;
+  }
+
+  .splitter .main-part .select-tip .tip-container input[type=button] {
+    width: 6rem;
+  }
+
+  .splitter .main-part .select-tip .tip-container input:last-of-type {
+    width: 6rem;
+  }
+
+  .splitter .main-part .bill input {
+    padding: 0 0 0 0.5rem;
+  }
+
+  .splitter .main-part .people input {
+    padding: 0 0 0 0.5rem;
+  }
+}
+
 /*# sourceMappingURL=style.css.map */
